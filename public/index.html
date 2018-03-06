@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <!--   <link rel="stylesheet" href="/style.css"> -->
+    <title>Proxy</title>
+  </head>
+  <body>
+    <div id="image-gallery"></div>
+    <div id="item-description"></div>
+    <div id="similar-items"></div>
+    <div id="item-reviews"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3001/dist/bundle.js"></script>
+    <script src="http://localhost:3000/app.bundle.js"></script>
+    <script src="http://localhost:1337/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script> 
+      ReactDOM.render(
+        React.createElement(imageGallery, { id: 10 }, null),
+        document.getElementById('image-gallery')
+      );
+
+      ReactDOM.render(
+        React.createElement(itemDescription, { id: 10 }, null),
+        document.getElementById('item-description')
+      );
+
+      ReactDOM.render(
+        React.createElement(similarItems, { id: 10 }, null),
+        document.getElementById('similar-items')
+      );
+
+      ReactDOM.render(
+        React.createElement(itemReviews, { id: 10 }, null),
+        document.getElementById('item-reviews')
+      );
+    </script>
+  </body>
+</html>
