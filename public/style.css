@@ -1,3 +1,46 @@
+/*general page*/
+#image-gallery {
+  height: 400px;
+  float: left;
+  width: 45%;
+  padding-left: 10%;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+#similar-title {
+  border-top: solid 1px #dddddd;
+  color: #cc6600;
+}
+#item-description {
+  height: 400px;
+  overflow: auto;
+  width: 40%;
+  padding-top: 15px;
+  display: block;
+}
+
+#similar-items {
+  width: 100%;
+  height: 350px;
+  border-bottom: solid 1px #dddddd;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#item-reviews {
+  padding-left: 2%;
+  float:left;
+}
+
+#header {
+  background-color: #232f3e;
+}
+#header img {
+  margin-left: 30px;
+  max-width: 100%;
+  height: 100px;
+}
 /*image gallery*/
 .app-view {
   overflow: hidden;
