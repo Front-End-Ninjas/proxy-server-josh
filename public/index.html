@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Nile</title>
+  </head>
+  <body>
+    <div id="header">
+      <img src="http://localhost:8080/nile_logo.png" />
+    </div>  
+    <div id="image-gallery"></div>
+    <div id="item-description"></div>
+      <h3 id="similar-title">Products related to this item</h3>
+    <div id="similar-items"></div>
+      <h2>Customer Reviews</h2>
+    <div id="item-reviews"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3001/dist/bundle.js"></script>
+    <script src="http://localhost:3000/app.bundle.js"></script>
+    <script src="http://localhost:1337/bundle.js"></script>
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script> 
+      ReactDOM.render(
+        React.createElement(imageGallery, { id: 10 }, null),
+        document.getElementById('image-gallery')
+      );
+
+      ReactDOM.render(
+        React.createElement(itemDescription, { id: 10 }, null),
+        document.getElementById('item-description')
+      );
+
+      ReactDOM.render(
+        React.createElement(similarItems, { id: 10 }, null),
+        document.getElementById('similar-items')
+      );
+
+      ReactDOM.render(
+        React.createElement(itemReviews, { id: 10 }, null),
+        document.getElementById('item-reviews')
+      );
+    </script>
+  </body>
+</html>
